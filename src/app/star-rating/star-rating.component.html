@@ -1,3 +1,8 @@
-<p>star-rating works!</p>
-<button (click)="handleStarEmitter(i)" *ngFor="let star of stars; index as i" >{{i+1}}{{star}}</button>
-<p>Your rating is {{rating}}</p>
+<div class="container m-4">
+  <p class="text-xl font-bold " >Leave a rating!</p>
+<div class="space-x-2">
+  <button  class="text-2xl "  (click)="handleStarEmitter(i)" *ngFor="let star of stars; index as i" ><span *ngIf="i < rating" class="text-yellow-400">★</span>
+    <span *ngIf="i >= rating" >{{star}}</span></button>
+
+</div>
+</div>

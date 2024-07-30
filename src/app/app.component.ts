@@ -19,5 +19,5 @@ rating(rating:number){
 
 
 }
- 
+
 }

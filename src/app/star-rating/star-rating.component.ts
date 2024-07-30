@@ -13,14 +13,12 @@ export class StarRatingComponent {
 
 
   stars:string[]=['☆','☆','☆','☆','☆']
-  
+
   @Input() rating:number=1;
-  // @Input()  star:string=""
-  @Output() starEmmiter:EventEmitter<any>= new EventEmitter<any>
-  @Input()  index:number=0
+  @Output() starEmitter:EventEmitter<number>= new EventEmitter<number>
   handleStarEmitter( index:number=0){
     this.rating=index+1
-   this.starEmmiter.emit(this.rating);
+   this.starEmitter.emit(this.rating);
   }
 
 }
