@@ -11,9 +11,9 @@ import { StarRatingComponent } from "./star-rating/star-rating.component";
   styleUrl: './app.component.scss'
 })
 export class AppComponent {
-  yourRating:number=1
+  yourRating:number=1 //store the rating
   title = 'test-exo';
-
+// Update the rating when it changes
 rating(rating:number){
   this.yourRating=rating
 
